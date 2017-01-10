@@ -1,0 +1,49 @@
+<idea-plugin version="2">
+  <id>com.liu.lang</id>
+  <name>Folder notes</name>
+  <version>1.1</version>
+  <vendor email="a512607330@sina.com" url="a512607330@sina.com">lang</vendor>
+
+  <description><![CDATA[
+      You can create a note for a sub folder under Src in the project;
+      Method of operation: click on the folder to note, click the right mouse button, select "Folder notes".<br>
+      <em>你可以为项目中src下的某个子文件夹创建备注;<br>
+      操作方法:点击需要备注的文件夹,点击鼠标右键,选择"文件夹备注"
+      </em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <br>
+      <em></em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="RightAction" class="com.action.AddRemarkAction" text="文件夹备注" description="右键增加备注">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="before" relative-to-action="ReplaceInPath"/>
+    </action>
+  </actions>
+
+</idea-plugin>

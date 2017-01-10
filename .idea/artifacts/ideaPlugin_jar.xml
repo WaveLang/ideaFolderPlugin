@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="ideaPlugin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ideaPlugin_jar</output-path>
+    <root id="root">
+      <element id="archive" name="ideaPlugin.jar">
+        <element id="module-output" name="ideaPlugin" />
+      </element>
+    </root>
+  </artifact>
+</component>
